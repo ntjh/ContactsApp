@@ -4,7 +4,7 @@
       "firstName": "Phoebe",
       "lastName": "Monroe",
       "phone": "+6591234567",
-      "email": "Phoebe@mail.com"
+      "email": "phoebe@mail.com"
     },
     {
       "id": "7c260813-a7ca-4863-a3f4-663a5224fe58",
@@ -46,7 +46,7 @@
       "firstName": "Elliot",
       "lastName": "Fry",
       "phone": "81818181",
-      "email": "Elliot@mail.com"
+      "email": "elliot@mail.com"
     }
   ]
   

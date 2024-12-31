@@ -86,14 +86,15 @@ const styles = StyleSheet.create({
   item: {
     flexDirection: 'row',
     alignItems: 'center',
-    padding: 15,
+    padding: 10,
     borderBottomWidth: 1,
     borderColor: '#ddd',
+    marginLeft: 10
   },
   avatar: {
-    width: 40,
-    height: 40,
-    borderRadius: 20,
+    width: 60,
+    height: 60,
+    borderRadius: 40,
     backgroundColor: '#ff8c00',
     justifyContent: 'center',
     alignItems: 'center',
