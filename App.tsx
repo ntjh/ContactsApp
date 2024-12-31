@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import ContactListScreen from "./screens/ContactListScreen";
 import mockdata from "./data.json"
 
-type Contacts = {
+export type Contact = {
   id: string; //uuid
   firstName: string;
   lastName: string;
@@ -11,8 +11,8 @@ type Contacts = {
 };
 
 export default function App() {
-  const [contacts, setContacts] = useState<Contacts[]>([]);
-  const [selectedContact, setSelectedContact] = useState<Contacts | null>(null);
+  const [contacts, setContacts] = useState<Contact[]>([]);
+  const [selectedContact, setSelectedContact] = useState<Contact | null>(null);
   const [refreshing, setRefreshing] = useState<boolean>(false);
 
   useEffect(() => {
@@ -29,7 +29,7 @@ export default function App() {
     setRefreshing(false);
   };
 
-  const handleSave = (updatedContact: Contacts) => {
+  const handleSave = (updatedContact: Contact) => {
     setContacts((prevContacts) =>
       prevContacts.map((contact) =>
         contact.id === updatedContact.id ? updatedContact : contact

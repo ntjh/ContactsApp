@@ -10,14 +10,8 @@ import {
   StatusBar,
 } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
+import { Contact } from '../App';
 
-type Contact = {
-  id: string;
-  firstName: string;
-  lastName: string;
-  phone: string;
-  email: string;
-};
 
 interface ContactListScreenProps {
   contacts: Contact[];
