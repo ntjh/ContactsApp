@@ -45,9 +45,9 @@ const ContactListScreen: React.FC<ContactListScreenProps> = ({
 
       {/* Header */}
       <View style={styles.header}>
-        <Ionicons name="search" size={24} color="#ff8c00" />
+        <Ionicons name="search" size={28} color="#ff8c00" />
         <Text style={styles.headerTitle}>Contacts</Text>
-        <Ionicons name="add" size={24} color="#ff8c00" />
+        <Ionicons name="add" size={28} color="#ff8c00" />
       </View>
 
       {/* Contact List */}
@@ -109,7 +109,8 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   name: {
-    fontSize: 16,
+    fontSize: 17,
+    fontWeight: '500'
   },
   phone: {
     color: 'gray',

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ContactListScreen from "./screens/ContactListScreen";
+import ContactEditScreen from "./screens/ContactEditScreen";
 import mockdata from "./data.json"
 
 export type Contact = {
@@ -37,6 +38,16 @@ export default function App() {
     );
     setSelectedContact(null); // Navigate back to the contact list
   };
+
+  if (selectedContact) {
+    return (
+      <ContactEditScreen
+        contact={selectedContact}
+        onSave={handleSave}
+        onCancel={() => setSelectedContact(null)}
+      />
+    );
+  }
 
   return (
     <ContactListScreen
